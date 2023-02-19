@@ -2,6 +2,7 @@ import os
 from decouple import config
 from casino import play_game, game_result
 
+
 def play_casino():
     MY_MONEY = int(config('MY_MONEY'))
     money = MY_MONEY
