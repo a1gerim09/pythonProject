@@ -18,3 +18,4 @@ print(config('DATABASE_URL'))
 num = config('COMMENTED', default=0, cast=int)
 print(num * 2)
 # Hi my dear students
+# Hello world
