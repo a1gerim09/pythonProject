@@ -1,6 +1,5 @@
 import sqlite3
 
-
 def create_connection(db_name):
     connection = None
     try:
@@ -134,7 +133,6 @@ def search_product_by_title(conn, title):
         print(e)
 
 
-
 sql_create_products_table = '''
 CREATE TABLE products (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -143,7 +141,6 @@ price DOUBLE(10, 2) NOT NULL DEFAULT 0.0,
 quantity INTEGER NOT NULL DEFAULT 0
 )
 '''
-
 
 connection = create_connection('hw.db')
 if connection is not None:
